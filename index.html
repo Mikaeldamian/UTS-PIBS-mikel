@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <img src="mikael.jpg" width="7%" height="auto" alt="Mikael Damian Fau">
+        <h1>Mikael Damian Fau</h1>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showContent('biodata')">Biodata</a></li>
+                <li><a href="#" onclick="showContent('pendidikan')">Pendidikan</a></li>
+                <li><a href="#" onclick="showContent('pengalaman')">Pengalaman</a></li>
+                <li><a href="#" onclick="showContent('keahlian')">Keahlian</a></li>
+            </ul>
+        </nav>
+
+        <section id="Content">
+            <div id="biodata">
+                <h2>Biodata</h2>
+                <p><strong>NIM:</strong> 2023081066</p>
+                <p><strong>Nama:</strong> Mikael Damian Fau</p>
+                <p><strong>Agama:</strong> Katolik</p>
+                <p><strong>Tanggal Lahir:</strong> 10 November</p>
+                <p><strong>Tempat Lahir:</strong> Jakarta</p>
+            </div>
+            <div id="pendidikan" style="display:none;">
+                <h2>Pendidikan</h2>
+                <p><strong>SD:</strong> SD 03 pagi</p>
+                <p><strong>SMP:</strong> SMPN 66 Jakarta</p>
+                <p><strong>SMA:</strong> SMA Triguna Jakarta</p>
+                <p><strong>Kuliah:</strong> UPJ</p>
+            </div>
+            <div id="pengalaman" style="display:none;">
+                <h2>Pengalaman</h2>
+                <p>HIMASIF</p>
+                <p>Gidhub</p>
+            </div>
+            <div id="keahlian" style="display:none;">
+                <h2>Keahlian</h2>
+                <p>Fotografer</p>
+            </div>
+        </section>
+
+        <aside>
+            <h2>Hobi</h2>
+            <ul>
+                <li>Futsal</li>
+                <li>Renang</li>
+                <li>Badminton</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>Twitter: @mikaeldamian</p>
+            <p>FB: @mikaeldamianfau</p>
+            <p>Instagram: @mikaeldamian10</p>
+        </div>
+        <div class="footer-center">
+            <p>&copy; Copyright 2020. All Rights Reserved</p>
+        </div>
+        <div class="footer-center">
+            <p>Nama Web</p>
+            <p>Slogan/Keterangan/Informasi Web</p>
+        </div>
+    </footer>
+
+    <script>
+        function showContent(sectionId) {
+            document.getElementById('biodata').style.display = 'none';
+            document.getElementById('pendidikan').style.display = 'none';
+            document.getElementById('pengalaman').style.display = 'none';
+            document.getElementById('keahlian').style.display = 'none';
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
